@@ -1,0 +1,147 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}  
+#wrapper{
+	background-color: rgba(50, 115, 220, 0.3);
+	font-family: "helvetica neue", sans-serif;
+	width: 100%;
+}
+.navbar
+{
+	background-color: rgb(7, 7, 7);
+	display: flex;
+	padding: 30px 0px 0px 20px;
+	
+}
+.navbar a
+{
+	color:  rgb(255, 255, 255);
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 8px 28px;
+}
+.navbar a:hover
+{
+	background-color: rgba(50, 115, 220, 0.473);
+}
+
+.content-div{
+    padding: 20px 60px;
+    background-color: whitesmoke;
+    font-size: 20px;
+    width: 80%;
+    margin: 20px auto;
+    border-radius: 3px; 
+    border: rgb(173, 173, 177) solid 1px;
+}
+.pubghead img{
+    width: 590;
+    height: 380;
+   border-radius: 3px;
+   }
+   .pubghead h2,h4{
+     color: rgb(97, 67, 11);
+     font-family: Arial, Helvetica, sans-serif;
+   }
+   .pubgheadT{
+    color:  rgb(31, 21, 3);;
+   }
+   .pubg-list h1,h5{
+    color: rgb(73, 71, 71);
+   }
+   .pubg-list img{
+     border-radius: 3px;
+     width: 540px;
+     height: 380px;   
+   }
+   table{   
+       font-family: Arial, Helvetica, sans-serif;
+       border-collapse: collapse;
+       width: 300px;
+   }
+   td,th{
+       border: 1px solid #dddddd;
+       text-align: left;
+       padding: 8px;
+       
+   }
+.foot-div{
+    background-color: rgb(58, 56, 56);
+     border-radius: 10px;
+}
+#toggle
+{
+	display: none;
+}
+
+.togglearea
+{
+	background-color:  rgb(31, 29, 29);;
+	border-bottom: 1px solid rgb(152, 174, 236);
+	padding: 10px;
+	display: flex;
+	justify-content: start;
+}
+.togglearea label
+{
+	height: 45px;
+	width: 50px;
+	color: rgb(255, 255, 255);
+	border-radius: 6px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+label {
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;
+    color:  rgb(255, 255, 255);
+}
+.togglearea
+{
+	display: none;
+}
+@media screen and (max-width: 700px)
+{
+.navbar
+	{
+		flex-direction: column;
+		display: none;
+	}
+	#toggle:checked + .navbar
+	{
+		display: flex;
+	}
+	.togglearea
+	{	
+		display: flex;
+    }
+    .content-div{
+    padding: none;
+        background-color: whitesmoke;
+        font-size: 20px;
+        width: 60%;
+        margin: 20px auto;
+        border-radius: 3px; 
+        border: rgb(173, 173, 177) solid 1px;
+    }
+    .pubghead img{
+        width: 210;
+        height: 150;
+       border-radius: 3px;
+       
+       }
+       .pubg-list img{
+        border-radius: 3px;
+        width: 270px;
+        height: 190px;   
+      }
+}
